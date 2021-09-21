@@ -1,26 +1,34 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<div>
+  <Nav />
+</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Nav from './components/Nav.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Nav,
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PingFang SC", "Microsoft Yahei", sans-serif;
+}
+@keyframes slideIn {
+    form {
+        transform: translateX(20px);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 </style>
